@@ -24,6 +24,9 @@ export default function Footer() {
               <p className="text-base md:text-lg text-muted-foreground">
                 <a href="https://www.instagram.com/the_adbr_zone/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground">Instagram</a>
               </p>
+              <p className="text-base md:text-lg text-muted-foreground">
+                <a href="https://stats.uptimerobot.com/iqSrnv79JA" target="_blank" rel="noopener noreferrer" className="text-muted-foreground">Status Page</a>
+              </p>
             </div>
           </div>
 
