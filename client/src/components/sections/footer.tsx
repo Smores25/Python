@@ -16,7 +16,7 @@ export default function Footer() {
 
           {/* Contact Us Section with Custom Transparent Divider */}
           <div className="flex-1 px-6 md:px-8 border-l" style={{ borderColor: "rgba(100, 100, 100, 0.2)" }}>
-            <SectionHeading subtitle="Contact Us" className="text-lg md:text-xl" />
+            <SectionHeading subtitle="Links" className="text-lg md:text-xl" />
             <div className="space-y-2 mt-4">
               <p className="text-base md:text-lg text-muted-foreground">
                 <a href="https://discord.gg/bSEeJpPvD8" target="_blank" rel="noopener noreferrer" className="text-muted-foreground">Discord</a>
