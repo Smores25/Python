@@ -9,6 +9,7 @@ const DISCORD_CHANNEL_URL = "https://discord.gg/bSEeJpPvD8";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+      
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-[url('https://i.imgur.com/d831eTv.png')] 
