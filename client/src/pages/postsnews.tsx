@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { SiDiscord } from "react-icons/si";
 import { useQuery } from "@tanstack/react-query";
 import { ImageViewer } from "@/components/ui/image-viewer";
+import Footer from "@/components/sections/footer";
 
 const DISCORD_CHANNEL_URL = "https://canary.discord.com/channels/961457576342593606/961457576795602957";
 const CHANNEL_ID = "961457576795602957";
@@ -106,6 +107,7 @@ export default function Posts() {
           </div>
         </ScrollArea>
       </div>
+      <Footer />
     </div>
   );
 }
