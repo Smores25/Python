@@ -18,8 +18,8 @@ function Router() {
       <Route path="/postsleaks" component={Posts} />
       <Route path="/postsnews" component={PostsNews} />
       <Route path="/postsplanned" component={PostsPlanned} />
-       <Route path="/postsfutureupdates" component={PostsFutureUpdate} />
-       <Route path="/postsunreleased" component={PostsUnreleased} />
+      <Route path="/postsfutureupdates" component={PostsFutureUpdate} />
+      <Route path="/postsunreleased" component={PostsUnreleased} />
       <Route component={NotFound} />
     </Switch>
   );

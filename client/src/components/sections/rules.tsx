@@ -13,7 +13,7 @@ const rules = [
 
 export default function Rules() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-accent/15">
       <div className="max-w-4xl mx-auto">
         <SectionHeading 
           title="Server Rules" 

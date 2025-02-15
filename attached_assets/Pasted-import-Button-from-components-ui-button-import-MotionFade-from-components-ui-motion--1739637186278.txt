@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MotionFade } from "@/components/ui/motion-fade";
 import { SiDiscord } from "react-icons/si";
 import { Link } from "wouter";
+import { FoxIcon } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const DISCORD_CHANNEL_URL = "https://discord.gg/bSEeJpPvD8";
@@ -20,10 +21,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative max-w-4xl mx-auto text-center">
         <MotionFade>
-          <div className="flex flex-col items-center mb-4">
-            <div className="w-30 h-30 text-primary bg-[url('https://i.imgur.com/kune5iA.png')] bg-cover bg-center">
-            </div>
-          </div>
+           <FoxIcon className="w-24 h-24 text-primary animate-pulse" />
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-6">
             Welcome to ADBR Zone
           </h1>
@@ -47,7 +45,7 @@ export default function Hero() {
             {/* Dropdown Button for GV Leaks */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button size="lg" variant="secondary">Server Posts</Button>
+                <Button size="lg" variant="secondary">Posts</Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem onClick={() => window.location.href = "/postsnews"}>GV News</DropdownMenuItem>

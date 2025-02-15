@@ -1,7 +1,7 @@
 import Hero from "@/components/sections/hero";
 import Features from "@/components/sections/features";
 import Rules from "@/components/sections/rules";
-import Community from "@/components/sections/community";
+import Footer from "@/components/sections/footer";
 import Staff from "@/components/sections/staff";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Staff />
       <Features />
       <Rules />
-      <Community />
+      <Footer />
     </div>
   );
 }

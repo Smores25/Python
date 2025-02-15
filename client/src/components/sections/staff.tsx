@@ -1,4 +1,3 @@
-
 import { SectionHeading } from "@/components/ui/section-heading";
 import { MotionFade } from "@/components/ui/motion-fade";
 import { Card, CardContent } from "@/components/ui/card";
@@ -18,7 +17,7 @@ export default function Staff() {
   });
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-accent/15">
       <div className="max-w-6xl mx-auto">
         <SectionHeading
           title="Our Staff"

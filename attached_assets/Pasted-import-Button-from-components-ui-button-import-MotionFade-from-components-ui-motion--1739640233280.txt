@@ -46,7 +46,7 @@ export default function Hero() {
 
             {/* Dropdown Button for GV Leaks */}
             <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+              <DropdownMenuTrigger asChild trigger="hover">
                 <Button size="lg" variant="secondary">Server Posts</Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
