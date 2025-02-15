@@ -44,18 +44,14 @@ export async function setupVite(app: Express, server: Server) {
   });
 
   app.use(vite.middlewares);
+
   app.use("*", async (req, res, next) => {
     const url = req.originalUrl;
 
     try {
-      const clientTemplate = path.resolve(
-        __dirname,
-        "..",
-        "client",
-        "index.html",
-      );
+      const clientTemplate = path.resolve(__dirname, "..", "client", "index.html");
 
-      // always reload the index.html file from disk incase it changes
+      // always reload the index.html file from disk in case it changes
       let template = await fs.promises.readFile(clientTemplate, "utf-8");
       template = template.replace(
         `src="/src/main.tsx"`,
@@ -71,7 +67,7 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(__dirname, "public");
+  const distPath = path.resolve(__dirname, "dist", "public"); // Correct path to static files in dist/public
 
   if (!fs.existsSync(distPath)) {
     throw new Error(
@@ -79,9 +75,10 @@ export function serveStatic(app: Express) {
     );
   }
 
+  // Serve static files from dist/public
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
+  // Serve fallback to index.html for any requests that don't match a file
   app.use("*", (_req, res) => {
     res.sendFile(path.resolve(distPath, "index.html"));
   });
